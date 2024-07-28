@@ -1,0 +1,151 @@
+/* Theme variables */
+:root {
+    --color-background: #f0f4f8;
+    --color-foreground: #2c3e50;
+    --color-highlight: #3498db;
+    --color-dimmed: #7f8c8d;
+    --font-header: 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Roboto', 'Noto Sans JP', sans-serif;
+  }
+  
+  /* Global styles */
+  section {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    padding: 40px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    color: var(--color-highlight);
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid var(--color-highlight);
+    padding-bottom: 0.3em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+  
+  ul, ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  a {
+    color: var(--color-highlight);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  blockquote {
+    border-left: 4px solid var(--color-highlight);
+    padding-left: 1em;
+    color: var(--color-dimmed);
+    font-style: italic;
+  }
+  
+  code {
+    font-family: 'Fira Code', monospace;
+    background-color: #e0e6ed;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+  }
+  
+  /* Custom classes */
+  .center {
+    text-align: center;
+  }
+  
+  .text-end {
+    text-align: end;
+  }
+  
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .highlight {
+    color: var(--color-highlight);
+    font-weight: bold;
+  }
+  
+  /* Image styles */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.8em;
+    color: var(--color-dimmed);
+  }
+
+/* フレックスボックスを使用した左右分割 */
+.split-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+.split-flex .left-40per {
+    width: 40%;
+}
+.split-flex .right-60per {
+    width: 60%;
+}
+.split-flex .left-50per {
+    width: 50%;
+}
+.split-flex .right-50per {
+    width: 50%;
+}
+.split-flex .left-60per {
+    width: 60%;
+}
+.split-flex .right-40per {
+    width: 40%; /* 少し隙間を作るために48%にしています */
+}
+
+
+.icon {
+    width: 200px;
+    height: 200px;
+    background-color: #020202;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+.ml-50 {
+    margin-left: 50px;
+}
+.mr-50 {
+    margin-right: 50px;
+}
